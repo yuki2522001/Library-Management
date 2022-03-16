@@ -1,0 +1,26 @@
+{
+  "name": "big_practice",
+  "version": "1.0.0",
+  "description": "Practice Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel src/page/index.html",
+    "server": "json-server --watch src/json-server/db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "gulp-file-include": "^2.3.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "posthtml": "^0.16.6",
+    "pug": "^3.0.2",
+    "uuid": "^8.3.2"
+  }
+}

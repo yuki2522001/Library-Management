@@ -1,0 +1,18 @@
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  margin-left: 300px;
+}
+
+th { 
+  text-transform: uppercase;
+}
+
+#text-data,
+#text-dataComplete,
+#text-UserData {
+  color: var(--text-primary);
+}

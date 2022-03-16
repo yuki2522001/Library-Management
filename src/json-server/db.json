@@ -1,0 +1,104 @@
+{
+  "books": [
+    {
+      "id": "87f07e83-c1d3-4838-be81-083034ff31b0",
+      "title": "JavaScript",
+      "author": "FPT",
+      "price": 35,
+      "totalQty": 50,
+      "availableQty": 48
+    },
+    {
+      "id": "1128795c-515a-44e1-ac97-21716e6f56ec",
+      "title": "HTML/CSS",
+      "author": "FPT",
+      "price": 45,
+      "totalQty": 50,
+      "availableQty": 50
+    },
+    {
+      "id": "f5ab43e8-0867-4ea0-85cf-654c0a8fa753",
+      "title": "OOPs",
+      "author": "FPT",
+      "price": 57,
+      "totalQty": 50,
+      "availableQty": 49
+    },
+    {
+      "id": "23a89d3e-1c34-4126-8072-4d7e3a2022ec",
+      "title": "PHP",
+      "author": "FPT",
+      "price": 35,
+      "totalQty": 35,
+      "availableQty": 34
+    },
+    {
+      "id": "0ffd86bd-3943-472d-8a75-a37386f388c1",
+      "title": "Java",
+      "author": "FPT",
+      "price": 35,
+      "totalQty": 30,
+      "availableQty": 29
+    }
+  ],
+  "users": [
+    {
+      "id": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "firstName": "Hoai",
+      "lastName": "Thuong",
+      "email": "ht2522001@gmail.com",
+      "phone": "0945346501",
+      "address": "228 Tan Tien"
+    },
+    {
+      "id": "f49565e4-b7f3-4de6-b101-f62d8f39400c",
+      "firstName": "Kiet",
+      "lastName": "Nguyen",
+      "email": "kiet.nguyen@asnet.com.vn",
+      "phone": "0555555555",
+      "address": "39 Kon Tum"
+    }
+  ],
+  "hireRequest": [
+    {
+      "id": "82a7d2c0-4abe-4180-9c49-3ba1d50f33cc",
+      "user": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "book": "f5ab43e8-0867-4ea0-85cf-654c0a8fa753",
+      "fromDate": "2022-03-15",
+      "toDate": "2022-03-17",
+      "isComplete": false
+    },
+    {
+      "id": "b62e6638-def7-4223-8a32-dd4535384753",
+      "user": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "book": "23a89d3e-1c34-4126-8072-4d7e3a2022ec",
+      "fromDate": "2022-03-15",
+      "toDate": "2022-03-18",
+      "isComplete": false
+    },
+    {
+      "id": "c39f7a25-5e24-4919-a6ec-b777ef81d8e8",
+      "user": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "book": "0ffd86bd-3943-472d-8a75-a37386f388c1",
+      "fromDate": "2022-03-16",
+      "toDate": "2022-03-18",
+      "isComplete": false
+    },
+    {
+      "id": "c0304a5a-89d7-432e-abc9-d2cbc308e41e",
+      "user": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "book": "87f07e83-c1d3-4838-be81-083034ff31b0",
+      "fromDate": "2022-03-16",
+      "toDate": "2022-03-25",
+      "isComplete": false
+    },
+    {
+      "id": "0723f1f3-69a2-4571-bec8-df999b6e3b66",
+      "user": "7fce1750-cc35-43c6-9bc2-826989f5afcd",
+      "book": "87f07e83-c1d3-4838-be81-083034ff31b0",
+      "fromDate": "2022-03-16",
+      "toDate": "2022-03-17",
+      "isComplete": false
+    }
+  ]
+}

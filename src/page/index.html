@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LIBRARY MANAGEMENT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <h3 class="nav__title">LIBRARY MANAGEMENT</h3>
+        <a class="navbar-brand" href="javascript:void(0)"> <img src="../assets/images/avt.jpg" alt="This is avatar" /> Hoai Thuong</a>
+      </div>
+    </nav>
+    <div class="menu">
+      <ul class="menu__list">
+        <h3 class="menu__title">Task Management</h3>
+        <li class="menu__item"><a href="../layouts/user.html"> <i class="fa fa-user"></i> User Management</a></li>
+        <li class="menu__item"><a href="../layouts/book.html"> <i class="fa fa-book"></i> Books Management</a></li>
+        <li class="menu__item"><a href="../layouts/hireRequest.html"><i class="fa fa-note-sticky"></i> Hire Requests Management</a> </li>
+      </ul>
+    </div>
+    <div class="row" id="gradient--show">
+      <div class="col-3">
+        <div class="card gradient-1">
+          <div class="card-body">
+            <h3 class="card-title text-white">Books</h3>
+            <div class="d-inline-block">
+              <h2 id="text-data"></h2>
+              <p class="text-white mb-0">March 2022</p>
+            </div>
+            <span class="display-5 gradient-5"><i class="fa fa-book"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card gradient-2">
+          <div class="card-body">
+            <h3 class="card-title text-white">Complete</h3>
+            <div class="d-inline-block">
+              <h2 id="text-dataComplete"></h2>
+              <p class="text-white mb-0">March 2022</p>
+            </div>
+            <span class="display-5 gradient-5"><i class="fa fa-check"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card gradient-3">
+          <div class="card-body">
+            <h3 class="card-title text-white">Users</h3>
+            <div class="d-inline-block">
+              <h2 id="text-UserData"></h2>
+              <p class="text-white mb-0">March 2022</p>
+            </div>
+            <span class="display-5 gradient-5"><i class="fa fa-users"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card gradient-4">
+          <div class="card-body">
+            <h3 class="card-title text-white">Library</h3>
+            <div class="d-inline-block">
+              <h2 class="text-white">99%</h2>
+              <p class="text-white mb-0">March 2022</p>
+            </div>
+            <span class="display-5 gradient-5"><i class="fa fa-heart"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="toast"></div>
+  <script type="module" src="../scripts/app/cardApp.js"></script>
+  </body>
+</html>

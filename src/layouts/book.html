@@ -1,0 +1,90 @@
+<include src="../page/index.html"></include>
+<form>
+  <input class="form__search" type="text" placeholder="What do you need?">
+  <input type="button" id="btn__search" class="btn__site" value="Search" />
+</form>
+<div class="book">
+  <div class="book__new">
+    <label for="check" type="button" id="btnOpen" class="btn btn-outline-secondary">Add Books</label>
+  </div>
+  <div class="info">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Total Quantity</th>
+          <th>Available Quantity</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="books__body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Model add books -->
+<div class="modal" id="taskModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Books</h5>
+        <label for="check" type="button" id="btnClose" class="close">
+          <span aria-hidden="true">&times;</span>
+        </label>
+      </div>
+      <div class="modal-body">
+        <form class="form-book">
+          <div class="form-group">
+            <label>Title <span class="validate-star">*</span></label>
+            <input type="text" id="input__title" class="form-control" name="title" placeholder="Enter title">
+            <small class="validate-message" id="msgTitle"></small> 
+          </div>
+          <div class="form-group">
+            <label>Author <span class="validate-star">*</span></label>
+            <input type="text" id="input__author" class="form-control" name="author" placeholder="Enter author">
+            <small class="validate-message" id="msgAuthor"></small>
+          </div>
+          <div class="form-group">
+            <label>Price <span class="validate-star">*</span></label>
+            <input type="number" id="input__price" class="form-control" name="price" placeholder="Enter price">
+            <small class="validate-message" id="msgPrice"></small>
+          </div>
+          <div class="form-group">
+            <label>Total Quantity <span class="validate-star">*</span></label>
+            <input type="number" id="input__totalQty" class="form-control" name="qtyTotal" placeholder="Enter Total Quantity">
+            <small class="validate-message" id="msgTotal"></small>
+          </div>
+          <div class="form-group">
+            <label>Available Quantity <span class="validate-star">*</span></label>
+            <input type="number" id="input__availableQty" class="form-control" name="qtyAvailable" placeholder="Enter Available Quantity">
+            <small class="validate-message" id="msgAvailable"></small>
+          </div>
+          <label type="submit" id="addBook" class="btn btn-outline-primary">Add</label>
+          <label type="submit" id="updateBook" class="btn btn-outline-warning">Update</buttonfor=>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal delete Book -->
+<div class="modal" id="bookDeleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="productModalLabel">Delete Book</h4>
+      </div>
+      <div class="modal-body">
+        <span>Are you sure to delete this book?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeDeleteModal">No</button>
+        <button type="button" class="btn btn-primary" id="btn__delete">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="../scripts/app/bookApp.js"></script>

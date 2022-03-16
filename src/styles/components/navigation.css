@@ -1,0 +1,14 @@
+.navbar-brand:nth-child(2) {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.navbar-brand > img {
+  margin-top: -2px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.nav__title {
+  margin: 15px;
+}

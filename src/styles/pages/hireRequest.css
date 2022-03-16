@@ -1,0 +1,17 @@
+.hire {
+  margin: 20px;
+}
+
+#hire-select-user, 
+#hire-select-book {
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid var(--boder-input);
+  width: 100%;
+}
+
+.hire__new {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}

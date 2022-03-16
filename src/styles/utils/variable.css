@@ -1,0 +1,33 @@
+:root {
+  /* text color */
+  --text-primary: #fff;
+  --text-secondary: #1c1c1c;
+  --text-third: #252525;
+  --text-input: #b2b2b2;
+  --text-message: royalblue;
+
+  /* background color */
+  --bg-master: gray;
+  --bg-secondary: #000;
+  --bg-third: #f5f5f5;
+  --bg-menu: #CC99FF;
+  --bg-menu-hover: #db7093;
+
+  /* boder color */
+  --boder-primary: #ebebeb;
+  --boder-shadow: rgba(0, 0, 0, 0.08);
+  --boder-input: #DDD;
+
+  /* button color */
+  --btn-primary: #008000;
+  --btn-secondary: #FF0000;
+  --btn-third: #0000FF;
+
+  /* Display message */
+  --success: #47d864;
+  --error: #ff623d;
+  --close: rgba(0, 0, 0, 0.3);
+
+}
+
+

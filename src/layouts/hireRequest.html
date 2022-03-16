@@ -1,0 +1,103 @@
+<include src="../page/index.html"></include>
+<form>
+  <input class="form__search" type="text" placeholder="What do you need?">
+  <input type="button" class="btn__site" value="Search" />
+</form>
+<div class="hire">
+  <div class="hire__new">
+    <button for="check" type="button" id="btnOpen" class="btn btn-outline-secondary">Add Hire Request</button>
+  </div>
+  <div class="info">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Book</th>
+          <th>From date</th>
+          <th>To date</th>
+          <th>Due date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="hires__body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Model add hire request -->
+<div class="modal" id="taskModal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Hire Request Management</h5>
+        <button for="check" type="button" class="close" id="btnClose">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-user">
+          <div class="form-group">
+            <label>User <span class="validate-star">*</span></label>
+            <select name="" id="hire-select-user"></select>
+            <small class="validate-message" id="msgUserName"></small>
+          </div>
+          <div class="form-group">
+            <label>Book <span class="validate-star">*</span></label>
+            <select id="hire-select-book"></select>
+            <small class="validate-message" id="msgBook"></small>
+          </div>
+          <div class="form-group">
+            <label>From Date <span class="validate-star">*</span></label>
+            <input type="date" id="input-fromDate" class="form-control" name="fromDate" placeholder="Enter from date">
+            <small class="validate-message" id="msgFromDate"></small>
+          </div>
+          <div class="form-group">
+            <label>To Date <small class="validate-star">*</small></label>
+            <input type="date" id="input-toDate" class="form-control" name="toDate">
+            <small class="validate-message" id="msgToDate"></small>
+          </div>
+          <label for="check" type="button" id="addInfos" class="btn btn-outline-primary">Add</label>
+          <label for="check" type="submit" id="updateInfos" class="btn btn-outline-warning">Update</label>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal delete hire request -->
+<div class="modal" id="hireRequestDeleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="productModalLabel">Delete Book</h4>
+      </div>
+      <div class="modal-body">
+        <span>Are you sure to delete this book?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeDeleteModal">No</button>
+        <button type="button" class="btn btn-primary" id="btn-deleteHireRequest">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal complete hire request -->
+<div class="modal" id="hireRequestCompleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="productModalLabel">Complete Book</h4>
+      </div>
+      <div class="modal-body">
+        <span>Are you sure to complete hire request this book?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeHireRequestModal">No</button>
+        <button type="button" class="btn btn-primary" id="btn-completeHireRequest">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="../scripts/app/hireRequestApp.js"></script>

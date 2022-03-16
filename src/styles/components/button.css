@@ -1,0 +1,30 @@
+.btn__site {
+	font-size: 14px;
+	color: var(--text-primary);
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: var(--bg-master);
+	border: none;
+}
+
+.btn__update,
+.btn__del,
+.btn__complete {
+  border-radius: 50%;
+  margin: 5px;
+  border: none;
+}
+
+.btn__update {
+  color: var(--btn-primary);
+}
+
+.btn__del {
+  color: var(--btn-secondary);
+}
+
+.btn__complete {
+  color: var(--btn-third);
+}

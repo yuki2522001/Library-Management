@@ -1,0 +1,11 @@
+.user {
+  margin: 20px;
+}
+.user__new {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.modal-title {
+  text-align: center;
+}

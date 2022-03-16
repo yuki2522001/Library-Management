@@ -1,0 +1,5 @@
+.item__complete {
+  border-radius: 5px;
+  color: var(--text-message);
+  background-image: linear-gradient(230deg, #e5e7e6, #3ee046);
+}

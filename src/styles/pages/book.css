@@ -1,0 +1,9 @@
+.book {
+  margin: 20px;
+}
+
+.book__new {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}

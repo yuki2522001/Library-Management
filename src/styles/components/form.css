@@ -1,0 +1,12 @@
+.form__search {
+  margin: 50px 0 0 500px;
+  width: 50%;
+	border: 1px solid var(--boder-primary);
+	height: 45px;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+form input::placeholder {
+  color: var(--text-input);
+}

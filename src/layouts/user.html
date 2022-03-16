@@ -1,0 +1,90 @@
+<include src="../page/index.html"></include>
+<form>
+  <input class="form__search" type="text" placeholder="What do you need?">
+  <input type="button" id="btn__search" class="btn__site" value="Search" />
+</form>
+<div class="user">
+  <div class="user__new">
+    <label for="check" type="button" id="btnOpen" class="btn btn-outline-secondary">Add Users</label>
+  </div>
+  <div class="info">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Adress</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="users__body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Model add user -->
+<div class="modal" id="taskModal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">User Management</h5>
+        <label for="check" type="button" class="close" id="btnClose">
+          <span aria-hidden="true">&times;</span>
+        </label>
+      </div>
+      <div class="modal-body">
+        <form class="form-user">
+          <div class="form-group">
+            <label>First Name <span class="validate-star">*</span></label>
+            <input type="text" id="input-firstName" class="form-control" name="firstName" required placeholder="Enter First Name">
+            <small class="validate-message" id="msgFirstName"></small>
+          </div>
+          <div class="form-group">
+            <label>Last Name <span class="validate-star">*</span></label>
+            <input type="text" id="input-lastName" class="form-control" name="lastName" required placeholder="Enter Last Name">
+            <small class="validate-message" id="msgLastName"></small>
+          </div>
+          <div class="form-group">
+            <label>Email <span class="validate-star">*</span></label>
+            <input type="text" id="input-email" class="form-control" name="email" required placeholder="Enter Email">
+            <small class="validate-message" id="msgEmail"></small>
+          </div>
+          <div class="form-group">
+            <label>Phone Number <span class="validate-star">*</span></label>
+            <input type="number" id="input-phone" class="form-control" name="phone" required placeholder="Enter Phone Number">
+            <small class="validate-message" id="msgPhone"></small>
+          </div>
+          <div class="form-group">
+            <label>Adress <span class="validate-star">*</span></label>
+            <input type="text" id="input-address" class="form-control" name="adress" required placeholder="Enter Adress">
+            <small class="validate-message" id="msgAddress"></small>
+          </div>
+          <label for="check" type="button" id="btnAddUser" class="btn btn-outline-primary">Add</label>
+          <label for="check" type="button" id="updateUser" class="btn btn-outline-warning">Update</label>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal delete User -->
+<div class="modal" id="userDeleteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="productModalLabel">Delete User</h4>
+      </div>
+      <div class="modal-body">
+        <span>Are you sure to delete this user?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeDeleteModal">No</button>
+        <button type="button" class="btn btn-primary" id="btn-deleteUser">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="../scripts/app/userApp.js"></script>
