@@ -17,16 +17,16 @@ export default class UserModel {
   }
 
   // Add books
-  async addUser(firstName, lastName, email, phone, address) {
+  async addUser(dataUsers) {
     // Use uuid to render unique id
     const userId = uuidv4();
     const newUser = {
       id: userId,
-      firstName,
-      lastName,
-      email,
-      phone,
-      address,
+      firstName: dataUsers.firstName,
+      lastName: dataUsers.lastName,
+      email: dataUsers.email,
+      phone: dataUsers.phone,
+      address: dataUsers.address,
     };
 
     const user = await post(urlUser, newUser);
@@ -41,14 +41,14 @@ export default class UserModel {
   }
 
   // Update user
-  async updateUser(id, firstName, lastName, email, phone, address) {
+  async updateUser(id, dataUsers) {
     const updateUser = {
-      id,
-      firstName,
-      lastName,
-      email,
-      phone,
-      address,
+      id: dataUsers.id,
+      firstName: dataUsers.firstName,
+      lastName: dataUsers.lastName,
+      email: dataUsers.email,
+      phone: dataUsers.phone,
+      address: dataUsers.address,
     };
 
     return update(`${urlUser}/${id}`, updateUser);

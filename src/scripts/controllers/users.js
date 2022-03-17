@@ -30,16 +30,16 @@ export default class UserController {
   };
 
   // Handle add user in both view and model
-  handlerAddUser = async (firstName, lastName, email, phone, address) => {
+  handlerAddUser = async (dataUsers) => {
     /**
      * Display validate message if input text value is empty
     */
-    if (!isRequired(firstName)) {
+    if (!isRequired(dataUsers.firstName)) {
       this.userView.checkFirstNameIsNotEmpty(VALIDATE_MSG.REQUIRED);
       return;
     }
 
-    if (!isRequired(lastName)) {
+    if (!isRequired(dataUsers.lastName)) {
       this.userView.checkLastNameIsNotEmpty(VALIDATE_MSG.REQUIRED);
       return;
     }
@@ -47,7 +47,7 @@ export default class UserController {
     /**
      * Display validate message if input email value is empty
     */
-    if (!isRequired(email)) {
+    if (!isRequired(dataUsers.email)) {
       this.userView.checkFormatEmail(VALIDATE_MSG.REQUIRED);
       return;
     }
@@ -55,7 +55,7 @@ export default class UserController {
     /**
      * Display validate message if email is malformed
     */
-    if (!isFormatEmail(email)) {
+    if (!isFormatEmail(dataUsers.email)) {
       this.userView.checkFormatEmail(VALIDATE_MSG.MESSAGE_EMAIL_FORMAT);
       return;
     }
@@ -63,7 +63,7 @@ export default class UserController {
     /**
      * Display validate message if input phone value is empty
     */
-    if (!isRequired(phone)) {
+    if (!isRequired(dataUsers.phone)) {
       this.userView.checkFormatPhone(VALIDATE_MSG.REQUIRED);
       return;
     }
@@ -71,7 +71,7 @@ export default class UserController {
     /**
      * Display validate message if phone is malformed
     */
-    if (!isFormatPhone(phone)) {
+    if (!isFormatPhone(dataUsers.phone)) {
       this.userView.checkFormatPhone(VALIDATE_MSG.MESSAGE_PHONE_FORMAT);
       return;
     }
@@ -79,7 +79,7 @@ export default class UserController {
     /**
      * Display validate message if input address value is empty
     */
-    if (!isRequired(address)) {
+    if (!isRequired(dataUsers.address)) {
       this.userView.checkFormatAddress(VALIDATE_MSG.REQUIRED);
       return;
     }
@@ -87,13 +87,13 @@ export default class UserController {
     /**
      * Display validate message if address is malformed
     */
-    if (!isFormatAddress(address)) {
+    if (!isFormatAddress(dataUsers.address)) {
       this.userView.checkFormatAddress(VALIDATE_MSG.MESSAGE_ADDRESS_FORMAT);
       return;
     }
 
     try {
-      const newUser = await this.userModel.addUser(firstName, lastName, email, phone, address);
+      const newUser = await this.userModel.addUser(dataUsers);
       this.userView.appendUser(newUser);
       this.userView.showSuccessMsg(SUCCESS_MSG.MESSAGE_ADD_USER);
     } catch (err) {
@@ -113,9 +113,9 @@ export default class UserController {
   };
 
   // Handle update user in both view and model
-  handlerUpdateUser = async (id, firstName, lastName, email, phone, address) => {
+  handlerUpdateUser = async (id, dataUsers) => {
     try {
-      const user = await this.userModel.updateUser(id, firstName, lastName, email, phone, address);
+      const user = await this.userModel.updateUser(id, dataUsers);
       this.userView.updateUserElement(user);
       this.userView.showSuccessMsg(SUCCESS_MSG.MESSAGE_UPDATE_USER);
     } catch (error) {

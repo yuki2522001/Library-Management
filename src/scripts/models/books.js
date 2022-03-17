@@ -17,16 +17,16 @@ export default class BookModel {
   }
 
   // Add new book
-  async addBook(title, author, price, totalQty, availableQty) {
+  async addBook(dataBooks) {
     // Use uuid to render unique id
     const bookId = uuidv4();
     const newBook = {
       id: bookId,
-      title,
-      author,
-      price: Number(price),
-      totalQty: Number(totalQty),
-      availableQty: Number(availableQty),
+      title: dataBooks.title,
+      author: dataBooks.author,
+      price: Number(dataBooks.price),
+      totalQty: Number(dataBooks.totalQty),
+      availableQty: Number(dataBooks.availableQty),
     };
 
     const book = await post(urlBook, newBook);
@@ -57,14 +57,14 @@ export default class BookModel {
   }
 
   // Update book
-  async updateBook(id, title, author, price, totalQty, availableQty) {
+  async updateBook(id, dataBooks) {
     const updateBook = {
-      id,
-      title,
-      author,
-      price: Number(price),
-      totalQty: Number(totalQty),
-      availableQty: Number(availableQty),
+      id: dataBooks.id,
+      title: dataBooks.title,
+      author: dataBooks.author,
+      price: Number(dataBooks.price),
+      totalQty: Number(dataBooks.totalQty),
+      availableQty: Number(dataBooks.availableQty),
     };
     return update(`${urlBook}/${id}`, updateBook);
   }

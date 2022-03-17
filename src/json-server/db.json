@@ -36,9 +36,17 @@
       "id": "0ffd86bd-3943-472d-8a75-a37386f388c1",
       "title": "Java",
       "author": "FPT",
-      "price": 35,
+      "price": 45,
+      "totalQty": 10,
+      "availableQty": 9
+    },
+    {
+      "id": "16d32b0e-2208-4e59-9027-823adfd21f1e",
+      "title": "Ruby",
+      "author": "FPT",
+      "price": 40,
       "totalQty": 30,
-      "availableQty": 29
+      "availableQty": 30
     }
   ],
   "users": [
@@ -51,12 +59,12 @@
       "address": "228 Tan Tien"
     },
     {
-      "id": "f49565e4-b7f3-4de6-b101-f62d8f39400c",
-      "firstName": "Kiet",
-      "lastName": "Nguyen",
-      "email": "kiet.nguyen@asnet.com.vn",
-      "phone": "0555555555",
-      "address": "39 Kon Tum"
+      "id": "674464b2-16e8-4404-9122-55576c00c44b",
+      "firstName": "Hai",
+      "lastName": "Hoang",
+      "email": "haihoanght@gmail.com",
+      "phone": "0377037373",
+      "address": "10 Quang Trung"
     }
   ],
   "hireRequest": [
